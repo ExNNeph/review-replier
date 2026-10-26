@@ -33,6 +33,11 @@ def test_check_flags_each_guardrail():
     assert rr.check("Wir haften selbstverständlich für den Schaden.", review, CAFE)[0].startswith("uses liability")
 
 
+def test_own_email_at_sentence_end_is_not_foreign_contact_data():
+    review = Review(author="Priya", rating=3, text="Colour came out more orange than the photo.")
+    assert rr.check("Sorry Priya! Message us at hello@studiomira.example. Mira & team", review, SALON) == []
+
+
 def test_allowed_offer_passes_and_confidential_breach_is_caught():
     cut = Review(author="Sam", rating=3, text="The cut is a bit uneven on the left side.")
     ok = "So sorry Sam! Pop back in within 14 days and we'll fix it for free. Mira & team"

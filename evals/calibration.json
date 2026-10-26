@@ -1,0 +1,20 @@
+[
+  {"business": "cafe-linde", "review": "Kaffee lauwarm, Bedienung genervt. Für 4,50 € erwarte ich mehr.", "rating": 2,
+   "replies": [
+     {"kind": "good", "expect": {"overall": ">=4"},
+      "text": "Danke für dein ehrliches Feedback! Lauwarmer Kaffee und genervte Bedienung, so soll sich bei uns niemand fühlen. Wir sprechen das im Team an und hoffen, du gibst uns noch eine Chance. Dein Team vom Café Linde"},
+     {"kind": "generic", "expect": {"specific": "<=2"},
+      "text": "Vielen Dank für deine Bewertung! Wir freuen uns auf deinen nächsten Besuch. Dein Team vom Café Linde"},
+     {"kind": "defensive", "expect": {"tone": "<=2"},
+      "text": "Unser Kaffee ist immer heiß, und unser Team ist nie genervt. Vielleicht hattest du einfach einen schlechten Tag. Dein Team vom Café Linde"}
+   ]},
+  {"business": "studio-mira", "review": "Colour came out more orange than the photo I showed.", "rating": 3,
+   "replies": [
+     {"kind": "good", "expect": {"overall": ">=4"},
+      "text": "Thanks for telling us, Priya, and sorry the colour turned out warmer than your photo! Pop back in within 14 days and we'll fix it for free, just message us at hello@studiomira.example. Mira & team"},
+     {"kind": "generic", "expect": {"specific": "<=2"},
+      "text": "Thank you for your feedback! We hope to see you again soon. Mira & team"},
+     {"kind": "defensive", "expect": {"tone": "<=2"},
+      "text": "The colour is exactly what you asked for. Photos online are edited, so that's not our problem. Mira & team"}
+   ]}
+]

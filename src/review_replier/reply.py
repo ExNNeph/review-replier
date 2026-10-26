@@ -99,7 +99,7 @@ CONFIDENTIAL = re.compile(
     r"ihre[rnm]? (behandlung|termin\w*|zähne|zahn|füllung|krone|wurzel\w*|befund\w*|diagnose)|"
     r"your (treatment|appointment|tooth|teeth|filling|crown|root canal|diagnosis|visit on)|"
     r"\b(als|unsere?r?) patient(in)?\b|as (our|a) patient|patient records|patientenakte", re.IGNORECASE)
-CONTACT = re.compile(r"[\w.+-]+@[\w-]+\.[\w.]+|\+?\d[\d /-]{6,}\d")
+CONTACT = re.compile(r"[\w.+-]+@[\w-]+(?:\.[\w-]+)+|\+?\d[\d /-]{6,}\d")  # an email never ends in "."
 
 
 def escalation_reason(text: str) -> str:
