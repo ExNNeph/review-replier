@@ -1,0 +1,26 @@
+[project]
+name = "review-replier"
+version = "0.1.0"
+description = "Draft Google review replies in a business's own voice: escalation for serious reviews, guardrails against promises and personal data, eval with an LLM judge."
+requires-python = ">=3.10"
+dependencies = ["pydantic>=2", "anthropic>=0.80"]
+
+[project.optional-dependencies]
+demo = ["streamlit>=1.50"]
+dev = ["pytest", "streamlit>=1.50"]
+
+[project.scripts]
+review-replier = "review_replier.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+review_replier = ["profiles.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "evals"]

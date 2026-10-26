@@ -1,0 +1,60 @@
+{
+  "cafe-linde": {
+    "name": "Café Linde",
+    "kind": "café",
+    "lang": "de",
+    "tone": "warm and casual, addresses guests with 'du', short, a little humour, never defensive",
+    "sign_off": "Dein Team vom Café Linde",
+    "contact": "hallo@cafe-linde.example",
+    "allowed_offers": [],
+    "facts": ["Open Tuesday to Sunday, 8:00 to 18:00", "Oat milk and two vegan cakes every day", "No table reservations"],
+    "confidential": false,
+    "examples": [
+      {"review": "Bester Käsekuchen der Stadt und super nettes Team!",
+       "reply": "Wow, danke dir! Der Käsekuchen wird sich freuen, das zu hören. Bis bald auf ein Stück, Dein Team vom Café Linde"},
+      {"review": "Kaffee war gut, aber wir haben 25 Minuten auf unser Frühstück gewartet.",
+       "reply": "Danke für dein ehrliches Feedback! 25 Minuten sind zu lang, da hast du recht. Am Wochenende ist bei uns viel los, wir arbeiten daran, schneller zu werden. Wir hoffen, du gibst uns noch eine Chance. Dein Team vom Café Linde"},
+      {"review": "Lovely place, great flat white!",
+       "reply": "Thank you so much! So happy you enjoyed the flat white. See you soon, your team at Café Linde"}
+    ]
+  },
+  "studio-mira": {
+    "name": "Studio Mira",
+    "kind": "hair salon",
+    "lang": "en",
+    "tone": "friendly, upbeat and personal, uses the reviewer's first name, at most one emoji",
+    "sign_off": "Mira & team",
+    "contact": "hello@studiomira.example",
+    "allowed_offers": [{"text": "a free fix of the cut or styling within 14 days of the appointment",
+                        "keywords": ["fix", "trim", "touch-up", "korrektur", "nachschneiden"]}],
+    "facts": ["Appointments online or by phone", "Open Monday to Saturday"],
+    "confidential": false,
+    "examples": [
+      {"review": "Lena gave me the best balayage I've ever had. Obsessed!",
+       "reply": "Thank you! Lena will be thrilled, balayage is her favourite thing to do. Enjoy the new look ✨ Mira & team"},
+      {"review": "Nice people but the cut is a bit uneven on the left side.",
+       "reply": "Thanks for telling us, and sorry the cut isn't quite right! Pop back in within 14 days and we'll fix it for free, just message us at hello@studiomira.example. Mira & team"},
+      {"review": "Sehr freundlich, gerne wieder!",
+       "reply": "Vielen Dank, das freut uns sehr! Bis zum nächsten Mal, Mira & Team"}
+    ]
+  },
+  "praxis-berger": {
+    "name": "Zahnarztpraxis Dr. Berger",
+    "kind": "dental practice",
+    "lang": "de",
+    "tone": "formal ('Sie'), calm and empathetic, factual, no medical statements about individual cases",
+    "sign_off": "Ihr Praxisteam Dr. Berger",
+    "contact": "praxis@dr-berger.example",
+    "allowed_offers": [],
+    "facts": ["Appointments by phone or online", "Wheelchair accessible"],
+    "confidential": true,
+    "examples": [
+      {"review": "Sehr einfühlsames Team, ich hatte keine Angst mehr.",
+       "reply": "Vielen Dank für Ihre freundlichen Worte. Es freut uns sehr, wenn sich Menschen bei uns gut aufgehoben fühlen. Ihr Praxisteam Dr. Berger"},
+      {"review": "Lange Wartezeit im Wartezimmer, fast eine Stunde.",
+       "reply": "Vielen Dank für Ihre Rückmeldung. Lange Wartezeiten sind ärgerlich, und wir nehmen Ihren Hinweis ernst. Wenn Sie uns Ihr Anliegen schildern möchten, erreichen Sie uns unter praxis@dr-berger.example. Ihr Praxisteam Dr. Berger"},
+      {"review": "Friendly staff and modern equipment.",
+       "reply": "Thank you very much for your kind feedback. We are glad to hear it. Your team at Dr. Berger's practice"}
+    ]
+  }
+}
