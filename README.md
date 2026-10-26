@@ -12,7 +12,18 @@ and OAuth, which is out of scope: you copy the reply into Google.
 
 ## Preview
 
-<!-- PREVIEW -->
+**Café Linde** (casual "du"): the cold-coffee complaint gets a specific, unbothered reply; Mark, who
+wants a refund, gets an English reply without one; Tom's question is answered from the profile (no
+reservations) instead of inventing a booking option; the review about a headscarf is not answered
+automatically but flagged with the reason:
+
+![Café Linde: three ready replies and one review for a human](docs/preview-cafe.png)
+
+**Zahnarztpraxis Dr. Berger** (formal "Sie", confidential): the reply to the patient who feared her
+root-canal treatment does not mention it, the waiting-time reply does not confirm an appointment, the
+parking reply invents no parking, and being laughed at for an accent goes to a human:
+
+![Dental practice: confidential, formal replies and one escalation](docs/preview-praxis.png)
 
 ## Run it locally (step by step)
 
